@@ -42,11 +42,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!-- <project path="development" name="platform_development" groups="developers,pdk-cw-fs,pdk-fs" remote="aex" /> -->
-  <!-- <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="aex" /> -->
-  <!-- <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="aex" /> -->
-  <!-- <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="aex" /> -->
-  <!-- <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="aex" revision="12.x-legacy-um" /> -->
-  <!-- <project path="external/airbnb-lottie" name="platform_external_airbnb-lottie" remote="aex" /> -->
+  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="aex" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="aex" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="aex" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="aex" revision="12.x-legacy-um" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="aex" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="aex" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aex" />
