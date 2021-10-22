@@ -56,6 +56,7 @@
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="aex" />
+  <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" remote="aex" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="aex" />
@@ -66,6 +67,7 @@
   <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="pdk-fs" remote="aex" />
   <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" groups="pdk-fs" remote="aex" />
   <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" groups="pdk-fs" remote="aex" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="aex" />
   <project path="prebuilts/extract-tools" name="platform_prebuilts_extract-tools" remote="aex" />
   <project path="prebuilts/tools-aosp" name="platform_prebuilts_tools-aosp" remote="aex" />
   <project path="system/bpf" name="platform_system_bpf" groups="pdk" remote="aex" />
