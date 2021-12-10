@@ -14,6 +14,10 @@
            fetch="https://github.com/aex-tmp"
            revision="refs/heads/12.x" />
 
+  <remote  name="arcana"
+           fetch="https://github.com/projectarcana-aosp"
+           revision="refs/heads/12.x" />
+           
   <remote  name="aex-lab"
            fetch="https://gitlab.com/AospExtended"
            revision="refs/heads/12.x" />
@@ -31,7 +35,7 @@
   <!-- <project path="art" name="platform_art" groups="pdk" remote="aex" /> -->
   <project path="bionic" name="platform_bionic" groups="pdk" remote="aex" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="aex" />
-  <project path="build/make" name="platform_build" groups="pdk" remote="aex" >
+  <project path="build/make" name="platform_build" groups="pdk" remote="arcana" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -40,11 +44,11 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="aex" >
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="arcana" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="aex" />
+  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana" />
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="aex" />
   <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="aex" />
   <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="aex" revision="12.x-legacy-um" />
@@ -52,9 +56,9 @@
   <project path="external/themelib" name="platform_external_themelib" remote="aex" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="aex" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="aex" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aex" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="arcana" />
   <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="aex" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="aex" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="arcana" />
   <project path="frameworks/opt/timezonepicker" name="platform_frameworks_opt_timezonepicker" remote="aex" />
   <project path="hardware/aosp/interfaces" name="platform_hardware_aosp_interfaces" groups="pdk" remote="aex" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="aex" />
@@ -66,10 +70,10 @@
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-fs" remote="aex" />
-  <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" remote="aex" />
+  <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" remote="arcana" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="aex" />
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="aex" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="aex" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="arcana" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="arcana" />
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/SimpleDeviceConfig" name="platform_packages_apps_SimpleDeviceConfig" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" groups="pdk-fs" remote="aex" />
@@ -92,7 +96,7 @@
   <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" groups="pdk" remote="aex" />
   <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="aex" />
   <project path="tools/extract-utils" name="platform_tools_extract-utils" remote="aex" />
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="aex" />
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana" />
   <project path="vendor/support" name="platform_vendor_support" remote="aex" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aex"  />
 
