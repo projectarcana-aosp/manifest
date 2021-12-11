@@ -96,6 +96,7 @@
   <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" groups="pdk" remote="aex" />
   <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="aex" />
   <project path="tools/extract-utils" name="platform_tools_extract-utils" remote="aex" />
+  <project path="vendor/lawnchair" name="platform_vendor_lawnchair" remote="arcana" />
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana" />
   <project path="vendor/support" name="platform_vendor_support" remote="aex" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aex"  />
