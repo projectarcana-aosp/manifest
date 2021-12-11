@@ -13,7 +13,7 @@
   <remote  name="aex"
            fetch="https://github.com/aex-tmp"
            revision="refs/heads/12.x" />
-
+           
   <remote  name="arcana"
            fetch="https://github.com/projectarcana-aosp"
            revision="refs/heads/12.x" />
@@ -55,6 +55,7 @@
   <project path="external/colorkt" name="platform_external_colorkt" remote="aex" />
   <project path="external/themelib" name="platform_external_themelib" remote="aex" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="aex" />
+  <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="aex" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="arcana" />
   <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="aex" />
@@ -71,6 +72,7 @@
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" remote="arcana" />
+  <project path="packages/apps/GrapheneOS-Camera" name="packages_apps_GrapheneOS-Camera" remote="arcana" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="arcana" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="arcana" />
@@ -90,13 +92,14 @@
   <project path="prebuilts/tools-aosp" name="platform_prebuilts_tools-aosp" remote="aex" />
   <project path="system/bpf" name="platform_system_bpf" groups="pdk" remote="aex" />
   <project path="system/bt" name="platform_system_bt" groups="pdk" remote="aex" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="aex" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="arcana" />
   <project path="system/netd" name="platform_system_netd" groups="pdk" remote="aex" />  
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="aex" />
   <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" groups="pdk" remote="aex" />
   <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="aex" />
   <project path="tools/extract-utils" name="platform_tools_extract-utils" remote="aex" />
   <project path="vendor/lawnchair" name="platform_vendor_lawnchair" remote="arcana" />
+  <project path="vendor/lawnicons" name="android_vendor_lawnicons" remote="arcana" />
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana" />
   <project path="vendor/support" name="platform_vendor_support" remote="aex" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aex"  />
