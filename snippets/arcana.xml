@@ -18,6 +18,10 @@
            fetch="https://github.com/projectarcana-aosp"
            revision="refs/heads/12.x" />
            
+  <remote  name="iu-lab"
+           fetch="https://gitlab.com/dlwlrma123"
+           revision="refs/heads/S" />
+           
   <remote  name="aex-lab"
            fetch="https://gitlab.com/AospExtended"
            revision="refs/heads/12.x" />
@@ -105,7 +109,7 @@
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aex"  />
 
   <!-- GApps -->
-  <project path="vendor/gapps" name="platform_vendor_gapps" clone-depth="1" remote="aex-lab" />
+  <project path="vendor/gapps" name="vendor_gapps" clone-depth="1" remote="iu-lab" />
 
   <!-- AOSP -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
