@@ -41,6 +41,7 @@
   <remove-project name="device/linaro/poplar-kernel" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
+  <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
@@ -50,7 +51,6 @@
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
-  <remove-project name="platform/frameworks/opt/timezonepicker" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/libcore" />
@@ -81,7 +81,10 @@
   <remove-project name="platform/system/bpf" />
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/logging" />
+  <remove-project name="platform/system/memory/lmkd" />
   <remove-project name="platform/system/netd" />  
+  <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" /> 
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/update_engine" />
