@@ -26,9 +26,15 @@ $ source build/envsetup.sh
 $ lunch aosp_$device-userdebug
 
 # Build the code
-$ mka bacon -jX
+$ make bacon -jX
 ```
 
 Credits
 -------
-* [**AEX**](https://github.com/AospExtended)
+* [**AOSPExtended**](https://github.com/AospExtended)
+* [**ProtonAOSP**](https://github.com/ProtonAOSP)
+* [**GrapheneOS**](https://github.com/GrapheneOS)
+* [**OctaviOS**](https://github.com/Octavi-OS)
+* [**SparkOS**](https://github.com/Spark-rom)
+* [**ProjectXtended**](https://github.com/Project-Xtended)
+* [**PixelExperience**](https://github.com/PixelExperience)
