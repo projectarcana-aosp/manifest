@@ -40,7 +40,7 @@
 
   <!-- Project Arcana -->
   <project path="manifest" name="manifest" remote="arcana" />
-  <project path="art" name="platform_art" groups="pdk" remote="aex" />
+  <project path="art" name="platform_art" groups="pdk" remote="arcana" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="arcana" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="aex" />
   <project path="build/make" name="platform_build" groups="pdk" remote="arcana" >
@@ -63,6 +63,8 @@
   <project path="external/colorkt" name="platform_external_colorkt" remote="arcana" />
   <project path="external/themelib" name="platform_external_themelib" remote="aex" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="aex" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="arcana" />
+  <project path="external/sqlite" name="external_sqlite" groups="pdk" remote="arcana" />
   <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="arcana" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="arcana" />
@@ -102,7 +104,7 @@
   <project path="system/bt" name="platform_system_bt" groups="pdk" remote="arcana" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="arcana" />
   <project path="system/logging" name="platform_system_logging" groups="pdk" remote="aex" />
-  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" groups="pdk" remote="aex" />
+  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" groups="pdk" remote="arcana" />
   <project path="system/netd" name="platform_system_netd" groups="pdk" remote="aex" />
   <project path="system/security" name="platform_system_security" groups="pdk" remote="aex" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="arcana" />

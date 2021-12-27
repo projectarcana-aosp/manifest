@@ -47,6 +47,8 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/libs/systemui" />
