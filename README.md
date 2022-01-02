@@ -38,3 +38,9 @@ Credits
 * [**SparkOS**](https://github.com/Spark-rom)
 * [**ProjectXtended**](https://github.com/Project-Xtended)
 * [**PixelExperience**](https://github.com/PixelExperience)
+* [**AOSP-Krypton**](https://github.com/AOSP-Krypton)
+* [**exTHmUI**](https://github.com/exthmui)
+* [**YAAP**](https://github.com/yaap)
+* [**Evolution-X**](https://github.com/Evolution-X)
+
+And the list goes on....
