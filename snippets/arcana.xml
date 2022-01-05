@@ -115,6 +115,7 @@
   <project path="vendor/themes" name="vendor_themes" remote="arcana" />
   <project path="vendor/support" name="platform_vendor_support" remote="aex" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aex"  />
+  <project path="vendor/lawnchair" name="vendor_lawnchair" remote="arcana" />
 
   <!--gapps-->
   <project path="vendor/gapps" name="vendor_gapps" remote="iu-lab" clone-depth="1" />
