@@ -121,6 +121,9 @@
   <!--gapps-->
   <project path="vendor/gapps" name="vendor_gapps" remote="iu-lab" clone-depth="1" />
   
+  <!-- Clang 14 version 14.0.1 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-latest" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="iu-lab" />
+  
   <!-- AOSP -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/exfatprogs" name="platform/external/exfatprogs"  groups="pdk" revision="refs/heads/master" />
