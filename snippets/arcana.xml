@@ -122,6 +122,9 @@
   
   <!-- Clang 14 version 14.0.1 -->
   <project path="prebuilts/clang/host/linux-x86/clang-latest" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="iu-lab" />
+
+  <!-- Proton -->
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
   
   <!-- AOSP -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
