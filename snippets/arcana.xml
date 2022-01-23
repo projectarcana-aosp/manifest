@@ -42,7 +42,7 @@
   <project path="manifest" name="manifest" remote="arcana" />
   <project path="art" name="platform_art" groups="pdk" remote="arcana" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="arcana" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="aex" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="arcana" />
   <project path="build/make" name="platform_build" groups="pdk" remote="arcana" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
