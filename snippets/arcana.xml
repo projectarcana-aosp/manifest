@@ -116,6 +116,7 @@
   <project path="vendor/themes" name="vendor_themes" remote="arcana" />
   <project path="vendor/support" name="platform_vendor_support" remote="arcana" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aex"  />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="arcana" />
   <project path="vendor/lawnchair" name="vendor_lawnchair" remote="arcana" />
 
   <!--gapps-->
