@@ -53,5 +53,9 @@ Credits
 * [**exTHmUI**](https://github.com/exthmui)
 * [**YAAP**](https://github.com/yaap)
 * [**Evolution-X**](https://github.com/Evolution-X)
+* [**ProjectRadiant**](https://github.com/ProjectRadiant)
+* [**ProjectStreak**](https://github.com/ProjectStreak)
+* [**WaveOS**](https://github.com/)
+* [**Descendant-XI**](https://github.com/Descendant-XI)
 
 And the list goes on....
