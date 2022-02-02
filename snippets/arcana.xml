@@ -113,7 +113,7 @@
   <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="aex" />
   <project path="tools/extract-utils" name="platform_tools_extract-utils" remote="aex" />
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana" />
-  <project path="vendor/themes" name="vendor_themes" remote="arcana" />
+  <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="arcana" />
   <project path="vendor/support" name="platform_vendor_support" remote="arcana" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aex"  />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="arcana" />
