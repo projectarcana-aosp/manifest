@@ -100,4 +100,5 @@
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/system/libziparchive" />
   <remove-project name="platform/packages/modules/adb" />
+  <remove-project name="platform/frameworks/libs/net" />
 </manifest>
