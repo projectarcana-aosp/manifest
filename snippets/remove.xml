@@ -102,4 +102,6 @@
   <remove-project name="platform/packages/modules/adb" />
   <remove-project name="platform/frameworks/libs/net" />
   <remove-project name="platform/frameworks/opt/telephony" />
+  <remove-project name="platform/external/scudo" />
+  <remove-project name="platform/external/fastrpc" />
 </manifest>
