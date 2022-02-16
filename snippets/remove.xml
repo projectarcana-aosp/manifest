@@ -104,4 +104,5 @@
   <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/external/scudo" />
   <remove-project name="platform/external/fastrpc" />
+  <remove-project name="platform/system/media" />
 </manifest>
