@@ -62,7 +62,7 @@
   <project path="hardware/qcom-caf/msm8994/audio" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="aex"  revision="12.x-caf-msm8994" />
   <project path="hardware/qcom-caf/msm8994/display" name="platform_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="aex"  revision="12.x-caf-msm8994" />
   <project path="hardware/qcom-caf/msm8994/media" name="platform_hardware_qcom_media" groups="qcom,pdk-qcom" remote="aex"  revision="12.x-caf-msm8994" />
-  <project path="hardware/qcom-caf/msm8996/audio" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="aex"  revision="12.x-caf-msm8996" />
+  <project path="hardware/qcom-caf/msm8996-R/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="arcana"  revision="arcana-12.0-caf-msm8996-R" />
   <project path="hardware/qcom-caf/msm8996/display" name="platform_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="aex"  revision="12.x-caf-msm8996" />
   <project path="hardware/qcom-caf/msm8996/media" name="platform_hardware_qcom_media" groups="qcom,pdk-qcom" remote="aex"  revision="12.x-caf-msm8996" />
   <project path="hardware/qcom-caf/msm8998/audio" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="aex"  revision="12.x-caf-msm8998" />
