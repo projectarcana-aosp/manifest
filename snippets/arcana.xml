@@ -123,6 +123,9 @@
   <project path="packages/apps/RepainterServicePriv" name="android_packages_apps_RepainterServicePriv" remote="arcana" />
   <project path="external/scudo" name="android_external_scudo" remote="arcana" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="arcana" />
+  <project path="external/giflib" name="external_giflib" remote="arcana" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="arcana" />
+  <project path="external/lz4" name="external_lz4" remote="arcana" />
   <project path="system/media" name="platform_system_media" remote="arcana" />
 
   <!--gapps-->

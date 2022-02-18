@@ -106,4 +106,7 @@
   <remove-project name="platform/external/scudo" />
   <remove-project name="platform/external/fastrpc" />
   <remove-project name="platform/system/media" />
+  <remove-project name="platform/external/giflib" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <remove-project name="platform/external/lz4" />
 </manifest>
