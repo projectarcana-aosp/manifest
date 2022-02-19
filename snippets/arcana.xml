@@ -70,6 +70,7 @@
   <project path="frameworks/base" name="platform_frameworks_base" remote="arcana" />
   <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="arcana" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="arcana" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="arcana" />
   <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="arcana" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="arcana" />
   <project path="hardware/aosp/interfaces" name="platform_hardware_aosp_interfaces" groups="pdk" remote="aex" />
