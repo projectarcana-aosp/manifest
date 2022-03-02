@@ -136,6 +136,7 @@
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="arcana" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="arcana" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="arcana" />
 
   <!--gapps-->
   <project path="vendor/gapps" name="vendor_gapps" remote="iu-lab" clone-depth="1" />
