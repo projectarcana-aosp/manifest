@@ -26,6 +26,23 @@ repo init --depth=1 --no-repo-verify -u https://github.com/projectarcana-aosp/ma
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -jX
 ```
 
+### Device bringup ###
+
+```bash
+
+# first, inherit Project Arcana common.mk
+$(call inherit-product, vendor/aosp/common.mk)
+
+# do aosp bringup and use these flags to adapt
+ARCANA_MAINTAINER := maintainer
+PREBUILT_LAWNCHAIR := true/false # if not stated default will be pixel launcher
+WITH_GAPPS := true/false
+TARGET_SUPPORTS_BLUR := true/false
+TARGET_BUILD_GRAPHENEOS_CAMERA := true/false # default is false
+COPY_APN_SYSTEM := true/false # default copies to /product (false/not stated)
+
+```
+
 ### Build ###
 
 ```bash
