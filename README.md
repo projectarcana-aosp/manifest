@@ -34,12 +34,26 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 $(call inherit-product, vendor/aosp/common.mk)
 
 # do aosp bringup and use these flags to adapt
+
+# maintainer flag
 ARCANA_MAINTAINER := maintainer
-PREBUILT_LAWNCHAIR := true/false # if not stated default will be pixel launcher
+
+# pixel build flag, if not define build type is vanilla
 WITH_GAPPS := true/false
+
+# only applicaple to pixel builds (WITH_GAPPS,) default is lawnchair for vanilla build
+PREBUILT_LAWNCHAIR := true/false
+
+# disable/enable blur support, default is false
 TARGET_SUPPORTS_BLUR := true/false
-TARGET_BUILD_GRAPHENEOS_CAMERA := true/false # default is false
-COPY_APN_SYSTEM := true/false # default copies to /product (false/not stated)
+
+# prebuilt graphene camera flag, default is false
+TARGET_BUILD_GRAPHENEOS_CAMERA := true/false
+
+# whether to copy apns-conf.xml to system
+# (for devices having issues with TelephonyProvider: FileNotFoundException)
+# default is false (product)
+COPY_APN_SYSTEM := true/false
 
 ```
 
