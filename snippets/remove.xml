@@ -111,4 +111,5 @@
   <remove-project name="platform/external/libjpeg-turbo" />
   <remove-project name="platform/external/lz4" />
   <remove-project name="platform/hardware/google/pixel" />
+  <remove-project name="platform/packages/services/Telephony" />
 </manifest>
