@@ -1101,6 +1101,6 @@
   <!-- Custom repos -->
   <include name="snippets/remove.xml" />
   <include name="snippets/arcana.xml" />
-  <include name="snippets/lineage.xml" />
+  <include name="snippets/fork.xml" />
 
 </manifest>
