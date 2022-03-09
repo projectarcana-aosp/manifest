@@ -44,6 +44,8 @@
           
   <remote name="crdroid-gitlab" fetch="https://gitlab.com/crdroidandroid" />
         
+  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
+  
   <!-- Project Arcana -->
   <project path="manifest" name="manifest" remote="arcana" />
   <project path="art" name="platform_art" groups="pdk" remote="arcana" />
@@ -151,6 +153,11 @@
 
   <!-- Proton -->
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
+  
+  <!-- Proton Fonts -->
+  <project path="external/noto-fonts" name="android_external_noto-fonts" remote="proton" />
+  <project path="external/roboto-fonts" name="android_external_roboto-fonts" remote="proton" />
+  <project path="external/google-fonts/cutive-mono" name="android_external_google-fonts_cutive-mono" remote="proton" />
   
   <!-- AOSP -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />

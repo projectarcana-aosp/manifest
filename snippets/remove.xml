@@ -114,4 +114,7 @@
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/libcxx" />
+  <remove-project name="platform/external/noto-fonts" />
+  <remove-project name="platform/external/roboto-fonts" />
+  <remove-project name="platform/external/google-fonts/cutive-mono" />
 </manifest>
