@@ -156,6 +156,7 @@
   <!-- vendor -->
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana" />
   <project path="vendor/support" name="platform_vendor_support" remote="arcana" />
+  <project path="vendor/sp" name="vendor_support" remote="arcana" />
   <project path="vendor/gms" name="vendor_gapps" remote="iu-lab" clone-depth="1" />
 
 </manifest>
