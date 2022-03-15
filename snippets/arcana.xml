@@ -103,7 +103,7 @@
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="arcana" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="arcana" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="arcana" />
-  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="arcana" revision="12.x-caf" />
+  <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="arcana" revision="12.x-caf" />
 
   <!-- packages apps -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="evo" />
@@ -143,6 +143,9 @@
  
    <!-- sepolicy -->   
   <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="arcana" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="arcana" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="arcana" revision="12.x-legacy-um" />
   
   <!-- system -->
   <project path="system/bt" name="system_bt" groups="pdk" remote="evo" />
