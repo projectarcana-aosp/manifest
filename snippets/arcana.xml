@@ -34,6 +34,10 @@
            fetch="https://github.com/AospExtended-Devices" 
            revision="refs/heads/12.x" />
 
+  <remote  name="evo"
+           fetch="https://github.com/Evolution-X"
+           revision="refs/heads/snow" />
+           
   <remote  name="lineage"
            fetch="https://github.com/LineageOS"
            revision="refs/heads/lineage-18.1" />
@@ -102,7 +106,7 @@
   <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="arcana" revision="12.x-caf" />
 
   <!-- packages apps -->
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-fs" remote="arcana" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="evo" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="arcana" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="arcana" />
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-fs" remote="arcana" />
@@ -141,7 +145,7 @@
   <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana" />
   
   <!-- system -->
-  <project path="system/bt" name="platform_system_bt" groups="pdk" remote="arcana" />
+  <project path="system/bt" name="system_bt" groups="pdk" remote="evo" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="arcana" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="arcana" />
   <project path="system/logging" name="platform_system_logging" groups="pdk" remote="arcana" />
