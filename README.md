@@ -87,6 +87,7 @@ Credits
 * [**ProjectRadiant**](https://github.com/ProjectRadiant)
 * [**ProjectStreak**](https://github.com/ProjectStreak)
 * [**WaveOS**](https://github.com/)
+* [**Project Kaleidoscope**](https://github.com/Project-Kaleidoscope)
 * [**Descendant-XI**](https://github.com/Descendant-XI)
 
 And the list goes on....
