@@ -117,8 +117,5 @@
   <remove-project name="platform/external/roboto-fonts" />
   <remove-project name="platform/external/google-fonts/cutive-mono" />
   <remove-project name="platform/system/libhwbinder" />
-  <remove-project name="platform/hardware/qcom/camera" />
-  <remove-project name="platform/hardware/qcom/wlan" />
-  <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/hardware/qcom/sdm845/display" />
 </manifest>
