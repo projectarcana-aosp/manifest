@@ -41,9 +41,6 @@ ARCANA_MAINTAINER := maintainer
 # pixel build flag, if not define build type is vanilla
 WITH_GAPPS := true/false
 
-# only applicaple to pixel builds (WITH_GAPPS,) default is lawnchair for vanilla build
-PREBUILT_LAWNCHAIR := true/false
-
 # disable/enable blur support, default is false
 TARGET_SUPPORTS_BLUR := true/false
 
