@@ -44,7 +44,7 @@
            
   <remote  name="lineage_12"
            fetch="https://github.com/LineageOS"
-           revision="refs/heads/lineage-19.0" />
+           revision="refs/heads/lineage-19.1" />
 
   <remote name="pixel-gitlab-self-hosted"
           fetch="https://gitlab.pixelexperience.org/android"
@@ -95,7 +95,6 @@
   <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="arcana" />
   <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="arcana" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="arcana" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="arcana" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="arcana" />
 
   <!-- hardware -->
@@ -139,11 +138,9 @@
   <!-- provider -->
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-fs" remote="arcana" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-fs" remote="arcana" />
-  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" groups="pdk-fs" remote="arcana" />
   
   <!-- services -->
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-fs" remote="arcana" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-fs" remote="arcana" />
  
    <!-- sepolicy -->   
   <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana" />
