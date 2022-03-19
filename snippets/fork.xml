@@ -140,5 +140,6 @@
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="arrow" />
   
  <!-- GApps -->
-  <project path="vendor/google" name="platform_vendor_gapps" clone-depth="1" remote="aex-lab" />
+  <project path="vendor/google/gms" name="yaosp/vendor_google_gms" remote="gitlab" revision="twelve" />
+  <project path="vendor/google/pixel" name="dlwlrma123/vendor_google_pixel" remote="gitlab" revision="twelve" />
 </manifest>
