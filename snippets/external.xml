@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+      
+  <!-- aex repositories -->
+  <project path="external/themelib" name="platform_external_themelib" remote="aex" />
+  <project path="prebuilts/extract-tools" name="platform_prebuilts_extract-tools" remote="aex" />
+  <project path="prebuilts/tools-aosp" name="platform_prebuilts_tools-aosp" remote="aex" />
+  
+  <!-- arrow repositories -->
+  <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="arrow" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="arrow" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="arrow" />
+  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="arrow" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="arrow" />
+  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="arrow" />
+  <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="arrow" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="arrow" />
+  <project path="external/mksh" name="android_external_mksh" remote="arrow" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="arrow" />
+  <project path="external/json-c" name="android_external_json-c" remote="arrow" />
+  <project path="external/selinux" name="android_external_selinux" remote="arrow" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="arrow" />
+  <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="arrow" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="arrow" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="arrow" />
+  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="arrow" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="arrow" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="arrow" />
+  <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="arrow" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="arrow" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="arrow" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="arrow" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="arrow" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="arrow" />
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="arrow" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="arrow" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="arrow" />
+  <project path="prebuilts/tools-extras" name="android_prebuilts_tools-extras" remote="arrow" />
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" clone-depth="1" remote="arrow" />
+  <project path="system/bt" name="android_system_bt" remote="arrow" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="arrow" />
+  <project path="system/libziparchive" name="android_system_libziparchive" remote="arrow" />
+  <project path="system/media" name="android_system_media" remote="arrow" />
+  <project path="system/qcom" name="android_system_qcom" remote="arrow" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="arrow" />
+  <project path="system/security" name="android_system_security" remote="arrow" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="arrow" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="arrow" />
+  <project path="system/vold" name="android_system_vold" remote="arrow" />
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="arrow" />
+  <project path="infrastructure/devices" name="arrow_infrastructure_devices" remote="arrow" />
+
+  <!-- Crdroid Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r445002" name="android_prebuilts_clang_host_linux-x86_clang-r445002" remote="crdroid-gitlab" revision="refs/heads/12.0" clone-depth="1" />
+    
+   <!-- Device sepolicy -->   
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="arrow" />
+  
+   <!-- Face Unlock -->  
+  <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
+  
+  <!-- Proton -->
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
+  
+  <!-- Proton Fonts -->
+  <project path="external/noto-fonts" name="android_external_noto-fonts" remote="proton" />
+  <project path="external/roboto-fonts" name="android_external_roboto-fonts" remote="proton" />
+  <project path="external/google-fonts/cutive-mono" name="android_external_google-fonts_cutive-mono" remote="proton" />
+  
+  <!-- Toolchain -->
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="lineage" />
+  
+  <!-- Gapps -->
+  <project path="vendor/gms" name="vendor_google_pixel" remote="iu" clone-depth="1" />
+    
+</manifest>

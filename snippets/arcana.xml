@@ -1,66 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch="https://github.com/" />
-
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
-  <remote  name="aex"
-           fetch="https://github.com/AospExtended"
-           revision="refs/heads/12.x" />
-           
-  <remote  name="arrow"
-           fetch="https://github.com/ArrowOS"
-           revision="refs/heads/arrow-12.0" />
-           
-  <remote  name="arcana"
-           fetch="https://github.com/projectarcana-aosp"
-           revision="refs/heads/12.x" />
-           
-  <remote  name="iu-lab"
-           fetch="https://gitlab.com/dlwlrma123"
-           revision="refs/heads/S" />
-           
-  <remote  name="aex-lab"
-           fetch="https://gitlab.com/AospExtended"
-           revision="refs/heads/12.x" />
-
-  <remote  name="aex-devices"
-           fetch="https://github.com/AospExtended-Devices" 
-           revision="refs/heads/12.x" />
-
-  <remote  name="evo"
-           fetch="https://github.com/Evolution-X"
-           revision="refs/heads/snow" />
-           
-  <remote  name="lineage"
-           fetch="https://github.com/LineageOS"
-           revision="refs/heads/lineage-18.1" />
-           
-  <remote  name="lineage_12"
-           fetch="https://github.com/LineageOS"
-           revision="refs/heads/lineage-19.1" />
-
-  <remote name="pixel-gitlab-self-hosted"
-          fetch="https://gitlab.pixelexperience.org/android"
-          revision="twelve" />
-          
-  <remote name="crdroid-gitlab" fetch="https://gitlab.com/crdroidandroid" />
-        
-  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
-  
   <!-- core -->
   <project path="manifest" name="manifest" remote="arcana" />
-  <project path="art" name="platform_art" groups="pdk" remote="arcana" />
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="arcana" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="arcana" />
-  <project path="libcore" name="platform_libcore" groups="pdk" remote="arcana" />  
-  <project path="build/make" name="platform_build" groups="pdk" remote="arcana" >
+  <project path="build/make" name="platform_build" remote="arcana" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -69,94 +12,68 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="arrow" />
   <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="arcana" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-    
+
+  <!-- platform -->
+  <project path="art" name="platform_art" remote="arcana" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="arcana" />
+  <project path="libcore" name="platform_libcore" groups="pdk" remote="arcana" />  
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="arcana" />
+
+   <!-- device sepolicy -->   
+  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="arcana" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="arcana" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" remote="arcana" revision="12.x-legacy-um" />
+
   <!-- external repos -->
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="arcana" />
   <project path="external/colorkt" name="platform_external_colorkt" remote="arcana" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="arcana" />
   <project path="external/giflib" name="external_giflib" remote="arcana" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="arcana" />
-  <project path="external/libcxx" name="platform_external_libcxx" remote="arcana" />
   <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="arcana" />
   <project path="external/lz4" name="external_lz4" remote="arcana" />
-  <project path="external/selinux" name="platform_external_selinux" remote="arcana" />
   <project path="external/scudo" name="android_external_scudo" remote="arcana" />
   <project path="external/sqlite" name="external_sqlite" groups="pdk" remote="arcana" />
-  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="arcana" />
   <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana" />
   
-  <!-- frameworks -->
+  <!-- framework repos -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="arcana" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="arcana" />
-  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="arcana" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="arcana" />
-
-  <!-- hardware -->
-  <project path="hardware/aosp/interfaces" name="platform_hardware_aosp_interfaces" groups="pdk" remote="arcana" />
-  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="arcana" />
-  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="arcana" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="arcana" />
-  <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="arcana" revision="12.x-caf" />
-
-  <!-- packages apps -->
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="evo" />
-  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="arcana" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="arcana" />
-  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-fs" remote="arcana" />
-  <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" remote="arcana" />
+  
+  <!-- packages -->
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="arcana" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="arcana" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="arcana" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="arcana" />
   <project path="packages/apps/GamingMode" name="packages_apps_GamingMode" remote="arcana" />
-  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="arcana" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="pdk-fs" remote="arcana" />
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="arcana" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="arcana" />
-  <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="arcana" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="arcana" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="arcana" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="arcana" />
   <project path="packages/apps/RepainterServicePriv" name="android_packages_apps_RepainterServicePriv" remote="arcana" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="arcana" />
-  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" groups="pdk-fs" remote="arcana" />
-  <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="arcana" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="arcana" />
+  <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="arcana" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="arcana" />
+  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" remote="arcana" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="arcana" />
+  <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="arcana" />
   
   <!-- overlays -->
   <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="arcana" />
   
-  <!-- packages modules -->
-  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" groups="pdk-fs" remote="arcana" />
-  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="pdk-fs" remote="arcana" />
-  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" groups="pdk-fs" remote="arcana" />
-  <project path="packages/modules/adb" name="platform_packages_modules_adb" groups="pdk" remote="arcana" />
-  
   <!-- prebuilts -->
   <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="arcana" />
   
-  <!-- provider -->
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-fs" remote="arcana" />
-  
-  <!-- services -->
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-fs" remote="arcana" />
- 
-   <!-- sepolicy -->   
-  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="arcana" />
-  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="arcana" />
-  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="arcana" />
-  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="arcana" revision="12.x-legacy-um" />
-  
   <!-- system -->
-  <project path="system/bt" name="system_bt" groups="pdk" remote="evo" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="arcana" />
-  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="arcana" />
-  <project path="system/logging" name="platform_system_logging" groups="pdk" remote="arcana" />
-  <project path="system/media" name="platform_system_media" remote="arcana" />
+  <project path="system/core" name="platform_system_core" remote="arcana" />
   <project path="system/memory/lmkd" name="platform_system_memory_lmkd" groups="pdk" remote="arcana" />
-  <project path="system/netd" name="platform_system_netd" groups="pdk" remote="arcana" />
-  <project path="system/security" name="platform_system_security" groups="pdk" remote="arcana" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="arcana" />
-  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="arcana" />
-  <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" groups="pdk" remote="arcana" />
-  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="arcana" />
   
   <!-- vendor -->
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="arcana" />
