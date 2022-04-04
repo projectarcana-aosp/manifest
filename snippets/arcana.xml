@@ -38,7 +38,7 @@
   
   <!-- framework repos -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="arcana" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="arcana" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="arcana" revision="12.x-wip" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="arcana" />
   
   <!-- packages -->
