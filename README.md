@@ -52,6 +52,26 @@ TARGET_BUILD_GRAPHENEOS_CAMERA := true/false
 # default is false (product)
 COPY_APN_SYSTEM := true/false
 
+# Misc flags to enable certain features
+
+# UDFPS ICONS/ANIMATIONS
+EXTRA_UDFPS_ANIMATIONS := true/false
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true/false
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true/false
+
+# Bloom and Living Universe Pixel Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := true/false
+
+# Pixel Now playing feature
+TARGET_SUPPORTS_NOW_PLAYING := true/false
+
+# Pixel charger animation
+USE_PIXEL_CHARGER_IMAGES := true/false
+
 ```
 
 ### Build ###
@@ -70,21 +90,27 @@ $ make bacon -jX
 
 Credits
 -------
-* [**AOSPExtended**](https://github.com/AospExtended)
-* [**ProtonAOSP**](https://github.com/ProtonAOSP)
-* [**GrapheneOS**](https://github.com/GrapheneOS)
-* [**OctaviOS**](https://github.com/Octavi-OS)
-* [**SparkOS**](https://github.com/Spark-rom)
-* [**ProjectXtended**](https://github.com/Project-Xtended)
-* [**PixelExperience**](https://github.com/PixelExperience)
+* [**AOSP Extended**](https://github.com/AospExtended)
 * [**AOSP-Krypton**](https://github.com/AOSP-Krypton)
-* [**exTHmUI**](https://github.com/exthmui)
-* [**YAAP**](https://github.com/yaap)
-* [**Evolution-X**](https://github.com/Evolution-X)
-* [**ProjectRadiant**](https://github.com/ProjectRadiant)
-* [**ProjectStreak**](https://github.com/ProjectStreak)
-* [**WaveOS**](https://github.com/)
-* [**Project Kaleidoscope**](https://github.com/Project-Kaleidoscope)
+* [**ArrowOS**](https://github.com/ArrowOS)
+* [**Crdroid**](https://github.com/crdroidandroid)
 * [**Descendant-XI**](https://github.com/Descendant-XI)
+* [**DotOS**](https://github.com/DotOS)
+* [**Evolution-X**](https://github.com/Evolution-X)
+* [**exTHmUI**](https://github.com/exthmui)
+* [**GrapheneOS**](https://github.com/GrapheneOS)
+* [**LineageOS**](https://github.com/LineageOS)
+* [**OctaviOS**](https://github.com/Octavi-OS)
+* [**Pixel Experience**](https://github.com/PixelExperience)
+* [**Project Awaken**](https://github.com/Project-Awaken)
+* [**Project Kaleidoscope**](https://github.com/Project-Kaleidoscope)
+* [**Project Radiant**](https://github.com/ProjectRadiant)
+* [**Project Streak**](https://github.com/ProjectStreak)
+* [**Project Xtended**](https://github.com/Project-Xtended)
+* [**ProtonAOSP**](https://github.com/ProtonAOSP)
+* [**SparkOS**](https://github.com/Spark-rom)
+* [**WaveOS**](https://github.com/)
+* [**Xdroid OSS**](https://github.com/xdroid-oss)
+* [**YAAP**](https://github.com/yaap)
 
 And the list goes on....
