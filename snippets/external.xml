@@ -2,7 +2,6 @@
 <manifest>
       
   <!-- aex repositories -->
-  <project path="external/themelib" name="platform_external_themelib" remote="aex" />
   <project path="prebuilts/extract-tools" name="platform_prebuilts_extract-tools" remote="aex" />
   <project path="prebuilts/tools-aosp" name="platform_prebuilts_tools-aosp" remote="aex" />
   
@@ -52,6 +51,7 @@
   <!-- crdroid repositories -->
   <project path="prebuilts/clang/host/linux-x86/clang-r445002" name="android_prebuilts_clang_host_linux-x86_clang-r445002" remote="crdroid-gitlab" revision="refs/heads/12.0" clone-depth="1" />
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" clone-depth="1" remote="crdroid" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="crdroid" />
     
    <!-- Device sepolicy -->   
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="arrow" />
@@ -59,7 +59,9 @@
    <!-- Face Unlock -->  
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
   
-  <!-- Proton -->
+  <!-- ProtonAosp -->
+  <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" groups="pdk" remote="github" revision="sc-v2" />
+  <project path="external/themelib" name="ProtonAOSP/android_external_themelib" groups="pdk" remote="github" revision="sc-v2" />
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
   
   <!-- Proton Fonts -->

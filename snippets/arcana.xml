@@ -31,14 +31,8 @@
   <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" remote="arcana" revision="12.x-legacy-um" />
 
   <!-- external repos -->
-  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="arcana" />
-  <project path="external/colorkt" name="platform_external_colorkt" remote="arcana" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="arcana" />
-  <project path="external/giflib" name="external_giflib" remote="arcana" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="arcana" />
-  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="arcana" />
-  <project path="external/lz4" name="external_lz4" remote="arcana" />
-  <project path="external/scudo" name="android_external_scudo" remote="arcana" />
   <project path="external/sqlite" name="external_sqlite" groups="pdk" remote="arcana" />
   <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana" />
   
@@ -50,7 +44,6 @@
   <!-- packages -->
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="arcana" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="arcana" />
-  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="arcana" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="arcana" />
   <project path="packages/apps/GamingMode" name="packages_apps_GamingMode" remote="arcana" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="arcana" />
@@ -68,12 +61,9 @@
   <!-- overlays -->
   <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="arcana" />
   
-  <!-- prebuilts -->
-  <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="arcana" />
-  
   <!-- system -->
   <project path="system/core" name="platform_system_core" remote="arcana" />
-  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" groups="pdk" remote="arcana" />
+  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="arcana" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="arcana" />
   
   <!-- vendor -->
