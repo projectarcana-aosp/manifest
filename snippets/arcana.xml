@@ -62,6 +62,7 @@
   <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="arcana" />
   
   <!-- system -->
+  <project path="system/bt" name="platform_system_bt" remote="arcana" />
   <project path="system/core" name="platform_system_core" remote="arcana" />
   <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="arcana" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="arcana" />
