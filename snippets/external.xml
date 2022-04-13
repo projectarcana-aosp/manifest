@@ -20,7 +20,6 @@
   <project path="external/selinux" name="android_external_selinux" remote="arrow" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="arrow" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="arrow" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="arrow" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="arrow" />
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="arrow" />
@@ -33,8 +32,6 @@
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="arrow" />
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="arrow" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="arrow" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="arrow" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="arrow" />
   <project path="prebuilts/tools-extras" name="android_prebuilts_tools-extras" remote="arrow" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="arrow" />
   <project path="system/libziparchive" name="android_system_libziparchive" remote="arrow" />
