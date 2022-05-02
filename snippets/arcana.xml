@@ -34,7 +34,6 @@
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="arcana" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="arcana" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="arcana" />
-  <project path="external/sqlite" name="external_sqlite" groups="pdk" remote="arcana" />
   <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana" />
   
   <!-- framework repos -->
